@@ -40,11 +40,11 @@ export default function GalleryModal({image,open,onClose}) {
                             </div>
                             <div>
 
-                            </div>
-                            <div className={'p-4 whitespace-pre-wrap'}  >
-                                {// eslint-disable-next-line
-                                }<ReactMarkdown children={image.fields.mythos} remarkPlugins={[remarkGfm]}/>
-                            </div>
+                            {/*</div>*/}
+                            {/*<div className={'p-4 whitespace-pre-wrap'}  >*/}
+                            {/*    {// eslint-disable-next-line*/}
+                            {/*    }<ReactMarkdown children={image.fields.mythos} remarkPlugins={[remarkGfm]}/>*/}
+                            {/*</div>*/}
                         </div>
 
                 </Modal.Body>
