@@ -1,16 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Home.module.css'
-import Gallery from "../components/Gallery";
-import {createClient} from "contentful"
+// import Gallery from "../components/Gallery";
 import {fetchMedia} from "./api/ContentfulAPI";
-import useShuffle from '../utils/useShuffle'
-import {useEffect, useState} from "react";
 import dynamic from 'next/dynamic'
-// const Gallery = dynamic(() => import("../components/Gallery"), {
-//     ssr: false,
-// });
+const Gallery = dynamic(() => import("../components/Gallery"), {
+    ssr: false,
+});
 
 export async function getStaticProps() {
     let content = fetchMedia()
