@@ -1,11 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Home.module.css'
-// import Gallery from "../components/Gallery";
+import Gallery from "../components/Gallery";
 import {fetchMedia} from "./api/ContentfulAPI";
-import dynamic from 'next/dynamic'
-const Gallery = dynamic(() => import("../components/Gallery"), {
-    ssr: false,
-});
+// import dynamic from 'next/dynamic'
+// const Gallery = dynamic(() => import("../components/Gallery"), {
+//     ssr: false,
+// });
 
 export async function getStaticProps() {
     let content = fetchMedia()
