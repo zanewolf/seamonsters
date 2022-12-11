@@ -3,8 +3,11 @@ import Masonry from "react-masonry-css";
 import Image from "next/image";
 import useShuffle from '../utils/useShuffle'
 import Modal from 'react-modal'
-import GalleryImage from "./GalleryImage";
-
+import dynamic from "next/dynamic";
+// import GalleryImage from "./GalleryImage";
+const GalleryImage = dynamic(() => import("../components/GalleryImage"), {
+    ssr: false,
+});
 
 export default function Gallery({images}) {
 
