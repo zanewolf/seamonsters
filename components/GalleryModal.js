@@ -38,9 +38,6 @@ export default function GalleryModal({image,open,onClose}) {
                             <div className={'p-2 text-center mb-10'}>
                                 <span className={'text-4xl font-bold'}>{image.fields.name} </span> <span className={'text-2xl'}>by {image.fields.author}</span>
                             </div>
-                            <div>
-
-                            {/*</div>*/}
                             {/*<div className={'p-4 whitespace-pre-wrap'}  >*/}
                             {/*    {// eslint-disable-next-line*/}
                             {/*    }<ReactMarkdown children={image.fields.mythos} remarkPlugins={[remarkGfm]}/>*/}
