@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218a8bc1-d17c-44e3-9895-44b990f25dd7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/components/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670447398618</updated>
       <workItem from="1670447399902" duration="206000" />
-      <workItem from="1670447850570" duration="45675000" />
+      <workItem from="1670447850570" duration="46041000" />
     </task>
     <servers />
   </component>
