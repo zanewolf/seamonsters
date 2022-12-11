@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import Image from "next/image";
-import GalleryModal2 from "./GalleryModal2";
 import GalleryModal from "./GalleryModal";
 import 'react-bootstrap'
 import {richTextFromMarkdown} from "@contentful/rich-text-from-markdown";
@@ -29,7 +28,7 @@ export default function GalleryImage({image}) {
                     </div>
                 </div>
             </div>
-            {open && <GalleryModal2 image={image} open={open} onClose={() => setOpen(false)}/>}
+            {open && <GalleryModal image={image} open={open} onClose={() => setOpen(false)}/>}
         </div>
     )
 }

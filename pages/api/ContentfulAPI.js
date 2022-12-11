@@ -14,7 +14,7 @@ export async function fetchMedia(){
 
     return{
         props: {
-            content: useShuffle(res.items),
+            content: res.items,
         },
         revalidate: 10
     }

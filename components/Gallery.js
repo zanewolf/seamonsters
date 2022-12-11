@@ -9,6 +9,10 @@ import GalleryImage from "./GalleryImage";
 export default function Gallery({images}) {
 
     const [imageDeck,setImageDeck] = useState(images)
+    //
+    // useEffect(()=>{
+    //     setImageDeck(useShuffle(imageDeck))
+    // },[])
 
 
     // console.log(open)
