@@ -8,7 +8,7 @@ import GalleryImage from "./GalleryImage";
 
 export default function Gallery({images}) {
 
-    const [imageDeck,setImageDeck] = useState(images)
+    // const [imageDeck,setImageDeck] = useState(images)
     //
     // useEffect(()=>{
     //     setImageDeck(useShuffle(imageDeck))
@@ -30,7 +30,7 @@ export default function Gallery({images}) {
                 breakpointCols={breakpointColumnsObj}
                 className="wrapper"
                 columnClassName="my-masonry-grid_column">
-                {imageDeck.map((image,i)=>{
+                {images.map((image,i)=>{
                     return (
                         <GalleryImage image={image} key={i}/>
                     )
