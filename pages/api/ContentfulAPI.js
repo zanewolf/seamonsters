@@ -1,5 +1,4 @@
 import {createClient} from "contentful";
-import useShuffle from '../../utils/useShuffle'
 
 export async function fetchMedia(){
 

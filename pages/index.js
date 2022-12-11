@@ -24,6 +24,8 @@ export async function getStaticProps() {
 
 export default function Home({content}) {
 
+    console.log(content)
+
 
 
   return (
