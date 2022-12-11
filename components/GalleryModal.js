@@ -42,7 +42,8 @@ export default function GalleryModal({image,open,onClose}) {
 
                             </div>
                             <div className={'p-4 whitespace-pre-wrap'}  >
-                                <ReactMarkdown children={image.fields.mythos} remarkPlugins={[remarkGfm]}/>
+                                {// eslint-disable-next-line
+                                }<ReactMarkdown children={image.fields.mythos} remarkPlugins={[remarkGfm]}/>
                             </div>
                         </div>
 
