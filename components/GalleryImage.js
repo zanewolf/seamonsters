@@ -28,7 +28,7 @@ export default function GalleryImage({image}) {
                     </div>
                 </div>
             </div>
-            {open && <GalleryModal image={image} open={open} onClose={() => setOpen(false)}/>}
+            {/*{open && <GalleryModal image={image} open={open} onClose={() => setOpen(false)}/>}*/}
         </div>
     )
 }
