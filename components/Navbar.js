@@ -47,7 +47,6 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
 
-    console.log( open)
 
     const router = useRouter();
 
@@ -59,7 +58,7 @@ export default function Navbar() {
             {/*</div>*/}
             <div className="w:1/2 md:w-5/12 flex items-center">
                 {/*<a className="text-2xl font-semibold" href="/">LOGO</a>*/}
-                <h1 className={`text-3xl lg:text-4xl flex justify-center ${open ? 'text-black' :'text-primary'}`}>
+                <h1 className={`text-3xl lg:text-5xl flex justify-center ${open ? 'text-black' :'text-primary'}`}>
                     <Link href={'/'} legacyBehavior>
                         <a>
                             <div className={''}>

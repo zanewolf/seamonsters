@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/Home.module.css'
 import Gallery from "../components/Gallery";
 import {createClient} from "contentful"
@@ -20,8 +21,9 @@ export default function Home({content}) {
 
   return (
     <div className={styles.container}>
-
+        {/*<div id={'modal-root'}></div>*/}
         <Gallery images={content}/>
+
 
 
       <footer className={styles.footer}>

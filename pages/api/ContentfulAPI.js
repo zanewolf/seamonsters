@@ -1,4 +1,5 @@
 import {createClient} from "contentful";
+import useShuffle from '../../utils/useShuffle'
 
 export async function fetchMedia(){
 
@@ -13,7 +14,7 @@ export async function fetchMedia(){
 
     return{
         props: {
-            content: res.items,
+            content: useShuffle(res.items),
         },
         revalidate: 10
     }

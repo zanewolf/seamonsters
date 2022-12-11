@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a8bc1-d17c-44e3-9895-44b990f25dd7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Gallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/ContentfulAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/useShuffle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GalleryImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GalleryModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GalleryModal2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Hero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MythosBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/SectionHero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/section.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/ContentfulAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/ContentfulAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -44,6 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/zwolf/Documents/Websites/personal_website",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
@@ -66,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670447398618</updated>
       <workItem from="1670447399902" duration="206000" />
-      <workItem from="1670447850570" duration="14806000" />
+      <workItem from="1670447850570" duration="43447000" />
     </task>
     <servers />
   </component>
