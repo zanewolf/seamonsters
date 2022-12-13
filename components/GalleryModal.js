@@ -1,49 +1,24 @@
-import React, {useEffect, useState} from 'react'
-import Image from "next/image";
-import GalleryModal from "./GalleryModal";
-import Modal from 'react-bootstrap/Modal';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import Image from "next/image";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
 
-
-export default function GalleryImage({image}) {
-
-    const [open, setOpen] = useState(false)
-
-
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+export default function GalleryModal({image,open,onClose}) {
 
     return (
         <div>
-            <div className={'group relative flex justify-center hover:scale-105 cursor-pointer'} onClick={()=>handleOpen()} >
-                <Image
-                    src={'https:' +image.fields.image.fields.file.url}
-                    alt={image.fields.author+"'s Sea Monster"}
-                    className={'image group-hover:brightness-50 '}
-                    width={300}
-                    height={300}
-                />
-                <div className={'flex flex-col flex-nowrap justify-center ml-auto h-full items-center absolute invisible group-hover:!visible'}>
-                    <div className={'text-2xl  border-b-2'}>{image.fields.name}</div>
-                    <hr/>
-                    <div className={''}>
-                        by {image.fields.author}
-                    </div>
-                </div>
-                {/*<GalleryModal image={image} open={open} onClose={() => {console.log('closing modal'); setOpen(false)}}/>*/}
-            </div>
             <Modal
                 show={open}
-                onHide={()=>handleClose()}
+                onHide={onClose}
                 centered
                 scrollable={true}
                 size={'xl'}
             >
                 {/*<Modal.Header closeButton />*/}
                 <Modal.Header className={'flex justify-end ml-auto'}>
-                    <Button variant={'dark'} className={'btn-close text-white'} onClick={()=>handleClose()}>X</Button>
+                    <Button variant={'dark'} className={'btn-close text-white'} onClick={onClose}>X</Button>
                 </Modal.Header>
                 <Modal.Body className={'text-black flex flex-col flex-nowrap justify-items-center m-auto w-full'}>
 
@@ -69,5 +44,5 @@ export default function GalleryImage({image}) {
                 </Modal.Body>
             </Modal>
         </div>
-    )
+    );
 }
