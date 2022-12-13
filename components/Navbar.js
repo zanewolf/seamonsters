@@ -47,7 +47,7 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
 
-    console.log( open)
+    // console.log( open)
 
     const router = useRouter();
 
