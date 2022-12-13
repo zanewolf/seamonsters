@@ -5,20 +5,20 @@ import Image from "next/image";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
 
-export default function GalleryModal({image,open,onClose}) {
+export default function GalleryModal({image,open,handleOpen,handleClose}) {
 
     return (
         <div>
             <Modal
                 show={open}
-                onHide={onClose}
+                onHide={()=>handleClose()}
                 centered
                 scrollable={true}
                 size={'xl'}
             >
                 {/*<Modal.Header closeButton />*/}
-                <Modal.Header className={'flex justify-end ml-auto'}>
-                    <Button variant={'dark'} className={'btn-close text-white'} onClick={onClose}>X</Button>
+                <Modal.Header className={'flex justify-end ml-auto'} closeButton>
+                    {/*<Button variant={'dark'} className={'btn-close text-black'} onClick={()=>handleClose()}>X</Button>*/}
                 </Modal.Header>
                 <Modal.Body className={'text-black flex flex-col flex-nowrap justify-items-center m-auto w-full'}>
 
@@ -27,8 +27,8 @@ export default function GalleryModal({image,open,onClose}) {
                             src={'https:' +image.fields.image.fields.file.url}
                             alt={image.fields.author+"'s Sea Monster"}
                             // fill={'contain'}
-                            width={600}
-                            height={600}
+                            width={400}
+                            height={400}
                         />
                     </div>
                     <div className={'flex flex-col flex-nowrap'}>
