@@ -43,7 +43,7 @@ export default function GalleryImage({image}) {
             >
                 {/*<Modal.Header closeButton />*/}
                 <Modal.Header className={'flex justify-end ml-auto'}>
-                    <Button variant={'dark'} className={'btn-close text-white'} onClick={()=>handleClose()}>X</Button>
+                    <Button variant={'dark'} className={'btn-close text-black'} onClick={()=>handleClose()}>X</Button>
                 </Modal.Header>
                 <Modal.Body className={'text-black flex flex-col flex-nowrap justify-items-center m-auto w-full'}>
 
@@ -52,8 +52,8 @@ export default function GalleryImage({image}) {
                             src={'https:' +image.fields.image.fields.file.url}
                             alt={image.fields.author+"'s Sea Monster"}
                             // fill={'contain'}
-                            width={600}
-                            height={600}
+                            width={400}
+                            height={400}
                         />
                     </div>
                     <div className={'flex flex-col flex-nowrap'}>
