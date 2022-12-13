@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218a8bc1-d17c-44e3-9895-44b990f25dd7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/SectionHero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pete.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/seaeye.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/section.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/zwolf/Documents/Websites/seamonsters - Copy",
+    "last_opened_file_path": "C:/Users/zwolf/Documents/Websites/seamonsters/styles",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
@@ -48,6 +51,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zwolf\Documents\Websites\seamonsters\styles" />
+      <recent name="C:\Users\zwolf\Documents\Websites\seamonsters\public" />
+      <recent name="C:\Users\zwolf\Documents\Websites\seamonsters\components" />
+      <recent name="C:\Users\zwolf\Documents\Websites\seamonsters\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zwolf\Documents\Websites\seamonsters\pages\api\utils" />
     </key>
