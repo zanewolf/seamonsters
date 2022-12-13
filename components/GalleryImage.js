@@ -20,13 +20,13 @@ export default function GalleryImage({image}) {
                     width={300}
                     height={300}
                 />
-                <div className={'flex flex-col flex-nowrap justify-center ml-auto h-full items-center absolute invisible group-hover:!visible'}>
-                    <div className={'text-2xl  border-b-2'}>{image.fields.name}</div>
-                    <hr/>
-                    <div className={''}>
-                        by {image.fields.author}
-                    </div>
-                </div>
+                {/*<div className={'flex flex-col flex-nowrap justify-center ml-auto h-full items-center absolute invisible group-hover:!visible'}>*/}
+                {/*    <div className={'text-2xl  border-b-2'}>{image.fields.name}</div>*/}
+                {/*    <hr/>*/}
+                {/*    <div className={''}>*/}
+                {/*        by {image.fields.author}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
             {/*{open && <GalleryModal image={image} open={open} onClose={() => setOpen(false)}/>}*/}
         </div>

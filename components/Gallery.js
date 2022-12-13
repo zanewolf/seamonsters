@@ -18,7 +18,7 @@ export default function Gallery({images}) {
     // },[])
 
 
-    // console.log(open)
+    console.log(images)
 
     const breakpointColumnsObj = {
         default: 4,
