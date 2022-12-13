@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Image from "next/image";
-import 'react-bootstrap'
+// import 'react-bootstrap'
 
 export default function GalleryImage({image}) {
 
