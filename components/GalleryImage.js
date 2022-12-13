@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function GalleryImage({image}) {
