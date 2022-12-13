@@ -43,8 +43,8 @@ export default function GalleryImage({image}) {
                 size={'xl'}
             >
                 {/*<Modal.Header closeButton />*/}
-                <Modal.Header className={'flex justify-end ml-auto'}>
-                    <Button variant={'dark'} className={'btn-close text-black'} onClick={()=>handleClose()}>X</Button>
+                <Modal.Header className={'flex justify-end ml-auto'} closeButton>
+                    {/*<Button variant={'dark'} className={'btn-close text-black'} onClick={()=>handleClose()}>X</Button>*/}
                 </Modal.Header>
                 <Modal.Body className={'text-black flex flex-col flex-nowrap justify-items-center m-auto w-full'}>
 
