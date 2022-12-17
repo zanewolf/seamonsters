@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218a8bc1-d17c-44e3-9895-44b990f25dd7" name="Changes" comment="" />
+    <list default="true" id="218a8bc1-d17c-44e3-9895-44b990f25dd7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pages/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/game.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
       <updated>1670447398618</updated>
       <workItem from="1670447399902" duration="206000" />
       <workItem from="1670447850570" duration="14806000" />
-      <workItem from="1671130984471" duration="14685000" />
+      <workItem from="1671130984471" duration="14996000" />
     </task>
     <servers />
   </component>

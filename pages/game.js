@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import Button from 'react-bootstrap/button'
+import Button from 'react-bootstrap'
 import Gameboard from "../components/Gameboard";
 import {fetchMedia} from "./api/ContentfulAPI";
 
