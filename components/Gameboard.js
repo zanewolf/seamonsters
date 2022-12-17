@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import useShuffle from '../utils/useShuffle'
 import GameDeck from "./GameDeck";
 
-function Shuffle(array) {
+function shuffleCards(array) {
 
     var m = array.length, t, i;
 
@@ -39,7 +39,7 @@ export default function Gameboard({cards,diffLevel, gameState,setGameState}) {
     // const gameCards = useContext(DataContext)
 
     // shuffle which cards are chosen, and then shuffle the order of the duplicated card deck
-    let gameCardsReady = Shuffle(generateGameDeck(Shuffle(cards),diffLevel/2))
+    let gameCardsReady = shuffleCards(generateGameDeck(shuffleCards(cards),diffLevel/2))
 
     return (
         <>

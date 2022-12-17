@@ -14,6 +14,27 @@ export async function getStaticProps() {
     return content
 }
 
+function shuffleCards(array) {
+
+    var m = array.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+
+        // And swap it with the current element.
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+
+    return array;
+
+
+}
+
 
 
 export default function Home({content}) {
@@ -21,7 +42,7 @@ export default function Home({content}) {
     const [imageDeck,setImageDeck] = useState(content)
 
     useEffect(()=>{
-        setImageDeck(useShuffle([...content]))
+        setImageDeck(shuffleCards([...content]))
     },[content])
 
     return (
