@@ -12,10 +12,10 @@ function NavLink({to, route, children}) {
 
 function MobileNav({open, setOpen}) {
     return (
-        <div className={`mobileMenu absolute top-0 left-0 h-full min-h-screen w-screen bg-black z-10 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+        <div className={`mobileMenu absolute top-0 left-0 h-full min-h-screen w-screen bg-blue-900 z-10 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter pt-4 drop-shadow-md bg-white h-28"> {/*logo container*/}
                 <Link href="/" legacyBehavior>
-                    <a className="text-xl font-semibold text-black " >Ocean Scholars @ Harvard University</a>
+                    <a className="text-6xl font-semibold text-black " >Sea Monsters</a>
                 </Link>
             </div>
             <div className="flex flex-col flex-between ">

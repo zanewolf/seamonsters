@@ -12,6 +12,8 @@
     "bootstrap": "^5.2.3",
     "contentful": "^9.2.14",
     "next": "13.0.6",
+    "rambda": "^7.4.0",
+    "ramda": "^0.28.0",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
@@ -19,6 +21,7 @@
     "react-image-gallery": "^1.2.11",
     "react-markdown": "^8.0.4",
     "react-masonry-css": "^1.0.16",
+    "react-spring": "^9.6.0",
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {

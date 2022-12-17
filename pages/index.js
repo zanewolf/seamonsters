@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Gallery from "../components/Gallery";
 import {fetchMedia} from "./api/ContentfulAPI";
+import React,{useEffect,useState} from "react";
+import useShuffle from "../utils/useShuffle";
 
 export async function getStaticProps() {
     let content = fetchMedia()
@@ -16,16 +18,19 @@ export async function getStaticProps() {
 
 export default function Home({content}) {
 
+    const [imageDeck,setImageDeck] = useState(content)
 
-  return (
+    useEffect(()=>{
+        setImageDeck(useShuffle([...content]))
+    },[])
+
+    return (
     <div className={styles.container}>
 
-        <Gallery images={content}/>
-
+        <Gallery images={imageDeck}/>
 
       <footer className={styles.footer}>
           Copyright 2022
-
       </footer>
     </div>
   )

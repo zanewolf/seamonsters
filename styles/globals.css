@@ -93,3 +93,7 @@ nav .siteTitle{
   width: 100%;
   margin-bottom: 16px;
 }
+
+.board li {
+  list-style: none;
+}

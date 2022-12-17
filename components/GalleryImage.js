@@ -27,8 +27,7 @@ export default function GalleryImage({image}) {
                     height={300}
                 />
                 <div className={'flex flex-col flex-nowrap justify-center ml-auto h-full items-center absolute invisible group-hover:!visible'}>
-                    <div className={'text-2xl  border-b-2'}>{image.fields.name}</div>
-                    <hr/>
+                    {image.fields.name && <div className={'text-2xl  border-b-2'}>{image.fields.name}</div>  }
                     <div className={''}>
                         by {image.fields.author}
                     </div>

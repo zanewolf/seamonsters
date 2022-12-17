@@ -24,7 +24,7 @@ export default function About() {
                     <Image src={pete} alt={'Profile Image of Pete'} width={400}/>
                 </div>
                 <div className="aboutPete w-[85vw] md:w-1/2 h-full text-lg justify-center m-auto ">
-                    <div className={'text-5xl font-bold mb-8'}>taught by Dr. Pete Girguis</div>
+                    <div className={'text-5xl mb-8'}>taught by <span className={'font-bold'}>Dr. Peter Girguis</span> </div>
                     <div>
                         <p className={"center"}> <a href={"https://girguislab.oeb.harvard.edu/people/peter-girguis"} alt={"Link to Pete Girguis' homepage"}>Dr. Girguis</a> is a Professor of Organismic and Evolutionary Biology, Harvard University, where he runs a lab researching most-things deep-sea-related. He has taught Sea Monsters through Harvard University Extension School and as a freshman colloquium through Harvard College.  </p>
                     </div>

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Masonry from "react-masonry-css";
-import Image from "next/image";
-import useShuffle from '../utils/useShuffle'
 import GalleryImage from "./GalleryImage";
 
 
 export default function Gallery({images}) {
+
+
 
     const breakpointColumnsObj = {
         default: 4,

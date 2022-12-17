@@ -12,7 +12,7 @@ export default function SectionHero ({image,imageposition,imageheight,textpositi
                 src={image}
                 alt="Picture of ocean surface with sunset rays"
                 // fill={'contain'}
-                width={1600}
+                width={'100vw'}
                 // height={'50vh'}
                 placeholder="blur"
                 className={'lg:-translate-y-52'}
