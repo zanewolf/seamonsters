@@ -25,10 +25,10 @@ export default function GameDeck ({cards,setGameState,setScore,diffLevel}){
     },[matchedArray])
 
     const calculateScore=(flippedCount)=>{
-        // let multiplier = diffLevel===6 ? 2 : diffLevel===9 ? 1 : 1
+        let multiplier = diffLevel===6 ? 2 : diffLevel===9 ? 1 : 0.5
         // let extraTime= Math.round((finishTime-startTime)/2500-window.innerWidth/1000)-(diffLevel*2) //shave off time if screen is bigger
         let extraFlip=(flippedCount-diffLevel)
-        let calcScore = 100 + diffLevel - extraFlip*1.5
+        let calcScore = 100 + diffLevel - extraFlip*multiplier
         console.log(flippedCount, extraFlip, calcScore)
 
 

@@ -22,7 +22,7 @@ export default function Home({content}) {
 
     useEffect(()=>{
         setImageDeck(useShuffle([...content]))
-    },[])
+    },[content])
 
     return (
     <div className={styles.container}>
