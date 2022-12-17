@@ -15,13 +15,6 @@ export async function getStaticProps() {
 
 export default function Game({content}){
 
-    // useEffect(() => {
-    //     const json = localStorage.getItem('memorygamehighscore')
-    //     const savedScore = JSON.parse(json)
-    //     if (savedScore) {
-    //         setHighScore(savedScore)
-    //     }
-    // }, [])
 
     const [diffLevel, setDiffLevel] = React.useState(null)
     const [gameState,setGameState] = React.useState(false) //this gets drilled down to Board TODO switch to context? :/
