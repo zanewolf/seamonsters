@@ -25,7 +25,7 @@ export default function GameDeck ({cards,setGameState,setScore,diffLevel}){
     },[matchedArray])
 
     const calculateScore=(flippedCount)=>{
-        let multiplier = diffLevel===6 ? 2 : diffLevel===9 ? 1 : 0.5
+        let multiplier = diffLevel===12 ? 2 : diffLevel===18 ? 1 : 0.5
         // let extraTime= Math.round((finishTime-startTime)/2500-window.innerWidth/1000)-(diffLevel*2) //shave off time if screen is bigger
         let extraFlip=(flippedCount-diffLevel)
         let calcScore = 100 + diffLevel - extraFlip*multiplier
@@ -63,7 +63,7 @@ export default function GameDeck ({cards,setGameState,setScore,diffLevel}){
             newFlipped2[i2] = false
             setFlippedArray(newFlipped2)
             setButtonDisabled(false)
-        }, 1000)
+        }, 2000)
 
     }
 
@@ -80,7 +80,7 @@ export default function GameDeck ({cards,setGameState,setScore,diffLevel}){
         if (buttonDisabled ===true){
             setTimeout(()=>{
                 setButtonDisabled(false)
-            },200)
+            },100)
         } else {
             // check to see if the card is already matched
             // if matched, then do nothing. No clicky clicky.
@@ -113,6 +113,7 @@ export default function GameDeck ({cards,setGameState,setScore,diffLevel}){
                             flippedStatus={flippedArray[index]}
                             onClick={()=>handleFlip(index)}
                             disabled={buttonDisabled}
+                            diffLevel={diffLevel}
                         />
                     </li>
                 )
